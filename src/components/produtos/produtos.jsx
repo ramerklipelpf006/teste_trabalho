@@ -2,6 +2,7 @@ import {useState, useEffect} from 'react';
 import Alerta from '../alerta';
 
 function Produto() {
+    console.log(process.env);
     const [listaObj, setListaObj] = useState([]);
     const [alerta, setAlerta] = useState({status: "", message: ""});
     const [editar, setEditar] = useState(false);
